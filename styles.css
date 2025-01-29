@@ -87,7 +87,8 @@ body {
   background-image: var(--gradient-1);
   margin: 0;
   padding: 0;
-  display: block;
+  align-items: flex-start;
+  
 }
 
 nav {

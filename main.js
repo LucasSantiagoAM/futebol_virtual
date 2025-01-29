@@ -93,3 +93,12 @@ const playButton = document.getElementById('playButton');
     video.play();
     playButton.style.display = 'none'; // Esconde o botão depois de clicar
   });
+
+
+  //carregar sempre no topo
+
+ 
+  window.onload = function() {
+    window.scrollTo(0, 0);
+  };
+
