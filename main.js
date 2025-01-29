@@ -81,3 +81,15 @@ function typeWrite(elemento){
 }
 const titulo = document.querySelector('.header_font h1');
 typeWrite(titulo);
+
+
+//criar botao
+
+
+const playButton = document.getElementById('playButton');
+  const video = document.getElementById('video_play');
+
+  playButton.addEventListener('click', () => {
+    video.play();
+    playButton.style.display = 'none'; // Esconde o botão depois de clicar
+  });

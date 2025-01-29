@@ -5,7 +5,7 @@
   --secondary-color: #06d574;
   --extra-light: #f3f4f6;
   --white: #ffffff;
-  --gradient-1: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+  --gradient-1: linear-gradient(315deg, #000000 0%, #000000 74%);
 
   --gradient-2: linear-gradient(
     to bottom,
@@ -78,12 +78,16 @@ a {
 html,
 body {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   color: var(--white);
   background-image: var(--gradient-1);
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 
 nav {
@@ -221,14 +225,34 @@ nav {
 .header__image video{
   height: 450px;
   border-radius: 25rem;
+  
 
+}
+.header__image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+  
+
+}
+#playButton{
+  position: absolute;
+  background-color: transparent;
+  border-style: none;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  
 }
 
 .header__image::after {
+  
   position: absolute;
   content: "Lucas Santiago";
   letter-spacing: 1.5rem;
-  opacity: 0.5;
+  opacity: 0;
   right: 1rem;
   top: 50%;
   transform: translate(50%, -50%) rotate(90deg);
