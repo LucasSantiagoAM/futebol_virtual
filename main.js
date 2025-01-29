@@ -94,6 +94,11 @@ const playButton = document.getElementById('playButton');
     playButton.style.display = 'none'; // Esconde o botão depois de clicar
   });
 
+  video.addEventListener('ended', function() {
+    video.currentTime = 0; // Reinicia o vídeo
+    video.play();
+  });
+
 
   //carregar sempre no topo
 
